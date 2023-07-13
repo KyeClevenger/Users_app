@@ -10,7 +10,7 @@
 <body>
     <h1>All the users:</h1>
     {% for one_user in all_users %}
-    <p><a href="/users/{{one_user.id}}/view">name: {{one_user.first_name}} {{one_user.last_name}}</a> email: {{one_user.email}} | <a href="/users/{{one_user.id}}/edit">edit</a> | <a href="/users/{{one_user.id}}/delete">delete</a></p>
+    <p><a href="/users/{{one_user.id}}/view">Name: {{one_user.first_name}} {{one_user.last_name}} |</a> Email: {{one_user.email}} | <a href="/users/{{one_user.id}}/edit">EDIT</a> | <a href="/users/{{one_user.id}}/delete">DELETE</a></p>
     {% endfor %}
     <a href="/users/new">Add a user</a>
 </body>

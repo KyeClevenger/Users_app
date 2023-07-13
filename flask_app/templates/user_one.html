@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{one_user.first_name}} {{one_user.last_name}}'s Page</title>
 </head>
+
 <body>
-   <h1>{{one_user.first_name}} {{one_user.last_name}}'s info</h1>
-   <p>{{one_user.email}}</p>
-   <a href="/">Go Home</a>
+    <h1>{{one_user.first_name}} {{one_user.last_name}}'s info</h1>
+    <p>First Name: {{one_user.first_name}}</p>
+    <p>Last Name: {{one_user.last_name}}</p>
+    <p>Email: {{one_user.email}}</p>
+    <p>Created At: {{one_user.created_at}}</p>
+    <p>Updated At: {{one_user.updated_at}}</p>
+    <a href="/">Go Home</a>
 </body>
+
 </html>
