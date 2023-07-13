@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welome to the user site!</title>
+</head>
+
+<body>
+    <h1>All the users:</h1>
+    {% for one_user in all_users %}
+    <p><a href="/users/{{one_user.id}}/view">name: {{one_user.first_name}} {{one_user.last_name}}</a> email: {{one_user.email}} | <a href="/users/{{one_user.id}}/edit">edit</a> | <a href="/users/{{one_user.id}}/delete">delete</a></p>
+    {% endfor %}
+    <a href="/users/new">Add a user</a>
+</body>
+
+</html>
